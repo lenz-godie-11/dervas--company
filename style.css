@@ -213,3 +213,343 @@ header.default-home p {
   display: block;
 }
 
+
+
+/* Main Services Container (Matches previous layout) */
+section.services {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+/* Headings and Paragraph Alignment */
+section.services h3,
+section.services h4,
+section.services p {
+  margin: 0;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+section.services h3 {
+  font-size: 2rem;
+}
+
+section.services p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Inner Layout for the Offer Section */
+section.services header {
+  display: grid;
+  row-gap: 1rem;
+}
+
+/* Offer List Styling */
+section.services .offer-tag ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+section.services .offer-tag a {
+  text-decoration: none;
+  color: #0066cc;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* Engineer Picture Constraints */
+section.services img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Forces the list container to align left */
+section.services .offer-tag ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Stops links from centering */
+  text-align: left;        /* Forces text to the left */
+  padding-left: 0;         /* Removes default browser list indentation */
+}
+
+/* Forces individual links to align left */
+section.services .offer-tag li {
+  text-align: left;
+  width: 100%;
+}
+
+
+
+/* Main Vision Container (Matches previous layouts) */
+section.vision {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+/* Headings and Paragraph Alignment */
+section.vision h3,
+section.vision p {
+  margin: 0;
+  text-align: left !important; /* Overrides any global center alignments */
+  font-family: sans-serif;
+}
+
+section.vision h3 {
+  font-size: 2rem;
+  margin-top: 1rem; /* Adds extra breathing room above headings */
+}
+
+/* First heading doesn't need top margin */
+section.vision h3:first-of-type {
+  margin-top: 0;
+}
+
+section.vision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+
+
+
+
+/* Main Pricing Container (Matches previous layouts) */
+section.pricing {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+/* Headings and Paragraph Alignment */
+section.pricing h3,
+section.pricing h4,
+section.pricing p {
+  margin: 0;
+  text-align: left !important;
+  font-family: sans-serif;
+}
+
+section.pricing h3 {
+  font-size: 2rem;
+}
+
+section.pricing p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+section.pricing header {
+  display: grid;
+  row-gap: 1.5rem;
+  width: 100%;
+}
+
+/* --- The Moving Marquee Track --- */
+
+/* This acts as a window exactly 720px wide; contents move inside it */
+.pricing-marquee {
+  width: 100%;
+  overflow: hidden;         /* Hides items when they move outside the layout column */
+  white-space: nowrap;       /* Prevents the moving list from breaking into vertical lines */
+  background-color: #f9f9f9; /* Soft background to define the moving track area */
+  padding: 1rem 0;
+  border-radius: 6px;
+}
+
+/* The wrapper that handles the actual horizontal motion */
+.pricing-marquee span {
+  display: inline-block;
+  padding-left: 100%;       /* Starts the moving text completely off-screen to the right */
+  animation: infinite-move-left 15s linear infinite;
+}
+
+/* Forces the list into a single moving row */
+section.pricing .pricing-plan ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-gap: 4rem;         /* Generates spacing between the moving items */
+}
+
+section.pricing .pricing-plan li {
+  display: inline-block;
+}
+
+section.pricing .pricing-plan a {
+  text-decoration: none;
+  color: #0066cc;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+/* Smooth Infinite Scrolling Animation */
+@keyframes infinite-move-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+
+/* Main Team Container (Matches previous layouts) */
+section.team {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+/* Headings and Paragraph Alignment */
+section.team h3,
+section.team h4,
+section.team p {
+  margin: 0;
+  text-align: left !important; /* Overrides global center rules */
+  font-family: sans-serif;
+}
+
+section.team h3 {
+  font-size: 2rem;
+}
+
+section.team p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+section.team header {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+/* --- Team List Layout --- */
+section.team .team-members ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  row-gap: 2rem; /* Spacing between each team member block */
+}
+
+section.team .team-members li {
+  width: 100%;
+}
+
+/* Flex layout to keep image and details aligned together */
+section.team .team-members a {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem; /* Gap between the photo and the name text */
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Profile Picture Constraints */
+section.team .team-members img {
+  width: 80px;         /* Fixed width for identical sizing */
+  height: 80px;        /* Fixed height */
+  border-radius: 50%;  /* Makes profile pictures circular */
+  object-fit: cover;   /* Prevents the image from stretching */
+  background-color: #e0e0e0; /* Fallback gray box until images load */
+  display: block;
+}
+
+/* Text Detail Alignment */
+section.team .team-members span {
+  font-family: sans-serif;
+  text-align: left !important;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: block;
+}
+
+
+
+/* Main Contact Container (Matches previous layouts) */
+section.contact {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 1.5rem;
+  padding: 4rem 1rem;
+}
+
+/* Headings and Paragraph Alignment */
+section.contact h3,
+section.contact h4,
+section.contact p {
+  margin: 0;
+  text-align: left !important; /* Defeats global center rules */
+  font-family: sans-serif;
+}
+
+section.contact h3 {
+  font-size: 2rem;
+}
+
+section.contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+section.contact header {
+  display: grid;
+  row-gap: 1rem;
+}
+
+/* --- Address & Links Layout --- */
+section.contact address {
+  font-style: normal; /* Removes the default browser italic styling on <address> */
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;   /* Adds pleasant vertical breathing room between details */
+  text-align: left !important;
+  color: #333333;
+}
+
+section.contact address strong {
+  font-size: 1.2rem;
+  color: #000000;
+  display: block;     /* Ensures the company name acts as its own clean line */
+  margin-bottom: 0.5rem;
+}
+
+section.contact address a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+section.contact address a:hover {
+  text-decoration: underline; /* Adds an interactive visual clue on hover */
+}
