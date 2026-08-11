@@ -173,3 +173,43 @@ header.default-home p {
   text-align: left; 
 }
 
+
+
+/*css for the main content of about section*/
+
+.main-content {
+  display: grid;
+  grid-template-columns: minmax(auto, 720px);
+  justify-content: center;
+  align-content: center;
+  row-gap: 2rem;
+  padding: 4rem 1rem;
+}
+
+.main-content .grid-row {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.main-content h2, 
+.main-content h3 {
+  font-family: sans-serif;
+  margin: 0;
+  text-align: left;
+}
+
+.main-content p {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+  text-align: left;
+}
+
+.main-content .image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
