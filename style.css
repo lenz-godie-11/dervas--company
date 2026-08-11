@@ -1,0 +1,143 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:snow;
+}
+
+/* the shared parent controls the side-by-side layout */
+.site-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    background-color: snow;
+    padding: 0.5em 1em;
+}
+
+/* css for the navigation bar */
+nav {
+    color: black;
+    display: flex;
+   
+}
+
+/* make the marker disappear */
+nav ul {
+    list-style-type: none;
+    display: flex;   
+    margin: 0;
+    padding: 0;
+}
+
+/* make the elements in a single line */
+nav ul li {
+    display: inline-block;
+    margin: 0.3em 0.2em;
+}
+
+/* css for the heading of dobrodervas company limited */
+.dobro {
+    margin: 0;            
+    color: black;
+    font-family: cursive;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 4px #000000;
+}
+.hi{
+    text-align:center;
+    color:black;
+    font-family:monospace   ;
+}
+.default-home {
+    background-color: snow;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.services {
+    text-align: center;
+}
+
+
+/*the services section */
+
+.offer-tag {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.vision {
+    text-align: center;
+}
+
+.pricing {
+    text-align: center;
+}
+
+.team {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.team-members {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.pricing-plan {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+/*the css for marquee effect for the pricing packages*/
+.pricing-marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pricing-marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    -webkit-animation: pricing-marquee 45s linear infinite;
+    animation: pricing-marquee 45s linear infinite;
+}
+
+.pricing-marquee span:hover {
+    animation-play-state: paused;
+}
+
+/* keep the list items inline so they scroll as one row */
+.pricing-plan ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    margin: 0 2em;
+}
+
+@keyframes pricing-marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}

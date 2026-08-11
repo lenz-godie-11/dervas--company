@@ -4,41 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <!--header for the dobrodervas site--->
-    <header>
-        <!---the home page section--->
-        <h4>Dobrodervas-company-Limited</h4>
-        <h3>hi there..</h3>
-        <p>We are DOBRODERVAS COMPANY LIMITED offering a FAST and Reliable Internet to our community<br>Connecting town
-            streets and village homes with seamless, high-speed coverage you can count on. </p>
-    </header>
+<header class="site-header">
+    <h4 class="dobro">Dobrodervas-company-Limited</h4>
 
-    <!--navigation menu for dobrodervas site-->
+    <!-- navigation menu for dobrodervas site -->
     <nav>
         <ul>
-            <li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Vision</a></li>
             <li><a href="#">Pricings</a></li>
             <li><a href="#">Team</a></li>
-            <li><a href="#">contacts</a></li>
-            </li>
+            <li><a href="#">Contacts</a></li>
         </ul>
     </nav>
+</header>
+
+
+    <!--header for the dobrodervas site--->
+    <header class="default-home">
+        <!---the home page section--->
+        
+        <h3 class="hi">hi there..</h3>
+        <p>We are DOBRODERVAS COMPANY LIMITED offering a FAST and Reliable Internet to our community<br>Connecting town
+            streets and village homes with seamless, high-speed coverage you can count on. </p>
+    </header>
+
 
     <!--main content-for dobrodervas site -->
     <main>
 
         <!--the about page section-->
 
-        <section>
+        <section class="about">
 
             <h3>About Us</h3>
             <p>DOBRODERVAS is a leading provider of high-speed internet services,<br>committed to connecting communities
@@ -57,7 +62,7 @@
         </section>
 
         <!---- the services section----->
-        <section>
+        <section class="services">
             <h3>Our Services</h3>
             <p>We offer a bunch of services for our customers and we provide a wide range of choice.<br> DOBRODERVAS
                 also listern to our custmer needs, visit on our website to be one of the lucky customer needs.</p>
@@ -65,7 +70,7 @@
                 <h4>what we offer..?</h4>
                 <!---here i should remember to align the engineer picture with the text --->
                 <img src="" alt="">
-                <nav>
+                <nav class="offer-tag">
                     <ul>
                         <li><a href="#">High-Speed Internet</a></li>
                         <li><a href="#">Reliable Connectivity</a></li>
@@ -79,7 +84,7 @@
 
         <!--- the vision section  of the company---->
 
-        <section>
+        <section class="vision">
             <h3>Our Vision</h3>
             <p>Our vision is to bridge the digital divide and empower communities with access to high-speed
                 internet.<br>We
@@ -91,51 +96,47 @@
 
         <!---the pricing package section ---->
 
-        <section>
+        <section class="pricing">
             <h3>Pricing Packages</h3>
             <p>We offer flexible pricing packages to suit different needs and budgets.<br>Choose the plan that fits you
                 best and enjoy seamless internet connectivity.</p>
             <header>
                 <h4>Our Pricing Plans</h4>
-                <nav>
-                    <ul>
-                        <li><a href="#">
-                                <strong>Basic Plan</strong>
-                                <span></span></a></li>
-                        <li><a href="#">
-                                <strong>Standard Plan</strong>
-                                <span></span></a></li>
-                        <li><a href="#">
-                                <strong>Premium Plan</strong>
-                                <span></span></a></li>
-                        <li><a href="#">
-                                <strong>Business Plan</strong>
-                                <span></span></a></li>
-                    </ul>
-                </nav>
+                <div class="pricing-marquee">
+                    <span>
+                        <nav class="pricing-plan">
+                            <ul>
+                                <li><a href="#"><strong>Basic Plan</strong></a></li>
+                                <li><a href="#"><strong>Standard Plan</strong></a></li>
+                                <li><a href="#"><strong>Premium Plan</strong></a></li>
+                                <li><a href="#"><strong>Business Plan</strong></a></li>
+                            </ul>
+                        </nav>
+                    </span>
+                </div>
             </header>
         </section>
 
         <!----the team section of the company----->
-        <section>
+        <section class="team">
             <h3>Our Team</h3>
             <p>Meet our dedicated team of professionals who are passionate about delivering exceptional internet
                 services.<br>We work together to ensure our customers have the best experience possible.</p>
             <header>
                 <h4>Our Team Members</h4>
-                <nav>
+                <nav class="team-members">
                     <ul>
-                        <li><a href="#"><img src="" alt=""><span>DEUS GERVAS | HENRY MAGANGA- FOUNDER & CEO</span></a>
+                        <li><a href="#"><img src="" alt=""><span>DEUS GERVAS | HENRY MAGANGA<br>FOUNDER & CEO</span></a>
                         </li>
-                        <li><a href="#"><img src="" alt=""><span>DAVID - CHIEF ENGINEER</span></a></li>
-                        <li><a href="#"><img src="" alt=""><span></span>NEEMA RICHARD- SECRETARY</span></a></li>
+                        <li><a href="#"><img src="" alt=""><span>DAVID<br> CHIEF ENGINEER</span></a></li>
+                        <li><a href="#"><img src="" alt=""><span></span>NEEMA RICHARD<br> SECRETARY</span></a></li>
 
                     </ul>
                 </nav>
             </header>
         </section>
         <!--the contact section for the company---->
-        <section>
+        <section class="contact">
             <h3>Contact Us</h3>
             <p>We value your feedback and inquiries. Reach out to us through the following channels:<br>We are here to
                 assist you with any questions or concerns you may have.</p>
